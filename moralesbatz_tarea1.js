@@ -41,3 +41,33 @@ var objeto = {
 console.log(Object.keys(objeto));
 // Método hasOwnProperty: verifica si el objeto tiene una propiedad específica
 console.log(objeto.hasOwnProperty("nombre"));
+
+///////////////////////////// ahora usaremos lo metodo de ejemplo que son el freeze y el seal 
+
+
+var objeto = {
+    nombre: "Juan",
+    edad: 30
+  };
+  
+  // Método freeze congela el objeto, evitando modificaciones en sus propiedades existentes
+  Object.freeze(objeto);
+  
+  objeto.edad = 31;
+  console.log(objeto); //no se realiza la modificación
+  
+
+  objeto.direccion = "Calle 123";
+  console.log(objeto); //no se agrega la nueva propiedad
+  
+  // Método seal permite modificar sus propiedades existentes pero no agregar ni eliminar propiedades
+  Object.seal(objeto);
+  
+
+  objeto.edad = 31;
+  console.log(objeto); //  se modifica
+  
+
+  objeto.direccion = "Calle 456";
+  console.log(objeto); // se agrega la nueva propiedad
+  
