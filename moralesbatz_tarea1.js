@@ -31,3 +31,13 @@ var array = [1, 2, 3];
 array.push(4, 5);
 // Método join: convierte los elementos del array en una cadena separada por un delimitador
 console.log(array.join("-"));
+
+//creamos la variable con el tipo de dato objeto
+var objeto = {
+    nombre: "juan",
+    edad: 30
+};
+// Método keys: devuelve un array con las claves del objeto
+console.log(Object.keys(objeto));
+// Método hasOwnProperty: verifica si el objeto tiene una propiedad específica
+console.log(objeto.hasOwnProperty("nombre"));
