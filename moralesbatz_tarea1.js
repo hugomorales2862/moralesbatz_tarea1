@@ -17,3 +17,11 @@ console.log(numero.toFixed(2));
 // Método toString: convierte el número en una cadena
 console.log(numero.toString()); 
 
+
+//se crea la variable de tipo bool
+var bool = true;
+// Método toString: convierte el booleano en una cadena
+console.log(bool.toString()); 
+// Método valueOf: devuelve el valor primitivo del booleano
+console.log(bool.valueOf());
+
