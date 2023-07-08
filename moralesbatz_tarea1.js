@@ -71,3 +71,11 @@ var objeto = {
   objeto.direccion = "Calle 456";
   console.log(objeto); // se agrega la nueva propiedad
   
+
+  // se crea la variable con tipo de dato null, este tipo de dato no  metodos asociandos directamente
+
+  var variable = null;
+//verificamos con el metodo type of si la variable es igual a HOLA
+  console.log(typeof variable === "HOLA");
+  //verificamos si la variable igual a null
+  console.log(variable === null);
