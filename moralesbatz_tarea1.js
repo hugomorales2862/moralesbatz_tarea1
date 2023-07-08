@@ -34,7 +34,7 @@ console.log(array.join("-"));
 
 //creamos la variable con el tipo de dato objeto
 var objeto = {
-    nombre: "juan",
+    nombre: "HUGO",
     edad: 30
 };
 // Método keys: devuelve un array con las claves del objeto
@@ -46,7 +46,7 @@ console.log(objeto.hasOwnProperty("nombre"));
 
 
 var objeto = {
-    nombre: "Juan",
+    nombre: "HUGO",
     edad: 30
   };
   
@@ -57,7 +57,7 @@ var objeto = {
   console.log(objeto); //no se realiza la modificación
   
 
-  objeto.direccion = "Calle 123";
+  objeto.direccion = "GUATEMALA, ZONA 3";
   console.log(objeto); //no se agrega la nueva propiedad
   
   // Método seal permite modificar sus propiedades existentes pero no agregar ni eliminar propiedades
@@ -68,7 +68,7 @@ var objeto = {
   console.log(objeto); //  se modifica
   
 
-  objeto.direccion = "Calle 456";
+  objeto.direccion = "CHIMALTENANGO";
   console.log(objeto); // se agrega la nueva propiedad
   
 
@@ -79,3 +79,11 @@ var objeto = {
   console.log(typeof variable === "HOLA");
   //verificamos si la variable igual a null
   console.log(variable === null);
+
+
+  // se crea la variable con un tipo de dato undefined
+  var variable;
+
+  console.log(variable === undefined);
+
+  console.log(typeof variable === "undefined")
