@@ -25,3 +25,9 @@ console.log(bool.toString());
 // Método valueOf: devuelve el valor primitivo del booleano
 console.log(bool.valueOf());
 
+//creamos la variable de tipo array
+var array = [1, 2, 3];
+// Método push: agrega elementos al final del array
+array.push(4, 5);
+// Método join: convierte los elementos del array en una cadena separada por un delimitador
+console.log(array.join("-"));
