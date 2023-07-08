@@ -37,9 +37,10 @@ var objeto = {
     nombre: "HUGO",
     edad: 30
 };
-// Método keys: devuelve un array con las claves del objeto
+// Método keys: devuelve un array con las claves del objeto EN ESTE CASO SON NOMBRE Y EDAD
 console.log(Object.keys(objeto));
-// Método hasOwnProperty: verifica si el objeto tiene una propiedad específica
+// Método hasOwnProperty: verifica si el objeto tiene una propiedad específica, COMO POR EJEMPLO EN ESTE CASO
+//VERIFICA SI TIENE LA PROPIEDAD "NOMBRE"
 console.log(objeto.hasOwnProperty("nombre"));
 
 ///////////////////////////// ahora usaremos lo metodo de ejemplo que son el freeze y el seal 
@@ -50,6 +51,19 @@ var objeto = {
     edad: 30
   };
   
+  
+  // Método seal permite modificar sus propiedades existentes pero no agregar ni eliminar propiedades
+  Object.seal(objeto);
+  
+  
+  objeto.edad = 31;
+  console.log(objeto); //  se modifica
+  
+  
+  objeto.direccion = "CHIMALTENANGO";
+  console.log(objeto); // NO se agrega la nueva propiedad
+
+
   // Método freeze congela el objeto, evitando modificaciones en sus propiedades existentes
   Object.freeze(objeto);
   
@@ -58,22 +72,11 @@ var objeto = {
   
 
   objeto.direccion = "GUATEMALA, ZONA 3";
-  console.log(objeto); //no se agrega la nueva propiedad
+//   console.log(objeto); //no se agrega la nueva propiedad
   
-  // Método seal permite modificar sus propiedades existentes pero no agregar ni eliminar propiedades
-  Object.seal(objeto);
   
-
-  objeto.edad = 31;
-  console.log(objeto); //  se modifica
-  
-
-  objeto.direccion = "CHIMALTENANGO";
-  console.log(objeto); // se agrega la nueva propiedad
-  
-
   // se crea la variable con tipo de dato null, este tipo de dato no  metodos asociandos directamente
-
+  
   var variable = null;
 //verificamos con el metodo type of si la variable es igual a HOLA
   console.log(typeof variable === "HOLA");
